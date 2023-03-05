@@ -1,0 +1,97 @@
+html {
+	height: 100%;
+  background: 
+    radial-gradient(
+      hsla(14,80%,80%,.7), 
+      hsla(0,0%,100%,0)
+      ) 
+      no-repeat, 
+    linear-gradient(
+      60deg, 
+      hsl(104,40%,60%), 
+      hsl(220,40%,60%), 
+      hsl(235,40%,60%)
+      );	
+	}
+.conductor {
+	height: 6em;
+	width: 6em;
+	border-radius: 50%;
+	margin: 2em auto;
+	position: relative;
+	color: white;
+	border: 2px solid white;
+	}
+	.conductor:after, .conductor:before {
+		font-size: 3em;
+		transition: .1s;
+		position: absolute;
+		top: 10%;
+		transform-origin: 55% 55%;
+		}
+	.conductor:before {
+		content: "☝";	
+		transform: rotate(-45deg);
+		left: 10%;
+		}
+	.conductor:after {
+		content: "☞";
+		transform: rotate(-45deg);
+		right: 10%;
+		}
+	.blah:before {
+		transform: rotate(45deg);	
+		}
+	.blah:after {
+		transform: rotate(-135deg);
+		}
+
+.playa {
+	text-align: center;
+    display: block;
+	}
+.typefun {
+	width: 80%;
+	font-size: 3em;
+	padding: 1em .5em;
+	background-color: hsla(224,40%,80%,.5);
+	border: 0;
+	color: white;
+    white-space: pre-wrap;
+	}
+textarea {
+	width: 80%;
+    height: 2.5em;
+	font-size: 3em;
+	padding: 1em .5em;
+	background-color: hsla(224,40%,80%,.5);
+	border: 0;
+	color: white;
+    white-space: pre-wrap;
+	}
+.table {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1%;
+    border-collapse: collapse;
+    border: 1px solid rgb(8, 8, 8);
+    /* the table tr not grow height if the text is too long */
+    /*table-layout: fixed;*/
+    }
+td:first-child,th:first-child {
+    padding-right: 5%;
+    }
+th,td{
+    border-right: 1px solid rgb(8, 8, 8);
+}
+
+td:first-child{
+	/* display: flex; */
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+td > div{
+	width: 60%;
+}
